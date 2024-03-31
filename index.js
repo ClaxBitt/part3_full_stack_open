@@ -10,6 +10,7 @@ const MIN_RANGE_ID = 1;
 
 app.use(express.json());
 app.use(cors());
+app.use(express.static('dist'));
 
 // ---- Morgan config ----
 morgan.token('body', (req, res) => { return JSON.stringify(req.body) });
