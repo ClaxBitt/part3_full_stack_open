@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf dist && cd ../../Part2/part2_full_stack_open/phonebook/ && npm run build && cp -r dist ../../Part3/part3_full_stack_open",
-    "build:full": "npm run build:ui && git add . && git commit -m uibuild & git push origin main"
+    "build:full": "npm run build:ui && git add . && git commit -m uibuild & git push origin master"
   },
   "author": "ClaxBitt",
   "license": "ISC",
