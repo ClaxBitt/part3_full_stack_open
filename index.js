@@ -58,6 +58,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
 }
 
+app.get('/', (req, res) => {
+  res.send('<h1>Hello World</h1>');
+});
+
 app.get('/api/persons', (req, res) => {
   res.json(persons);
 });
